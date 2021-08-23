@@ -1,4 +1,4 @@
 # snuup.github.io
 
+https://snuup.github.io/main.html
 
-https://code-boxx.com/css-responsive-table/#sec-table
