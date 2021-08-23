@@ -1,0 +1,6 @@
+// fonts
+google fonts could and should be self hosted: https://leerob.io/blog/fonts
+this requires http cache-control setting which on github pages is not possible
+therefore, atm we keep google font hosting
+
+-> switched to self hosting

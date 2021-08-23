@@ -1,0 +1,4 @@
+- gallery: image zooming problems with some images, like the tv image. others work a bit better. analyse and fix.
+  how does photoswipe or other highlighters do it?
+  a pinch js library?
+  fixing the gallery layout somehow? how?

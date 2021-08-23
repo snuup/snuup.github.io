@@ -1,0 +1,5 @@
+node_modules
+/.idea/
+/material/fontawesome-free-5.15.4-web/
+bundle.js
+/doc/*.psd

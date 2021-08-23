@@ -1,0 +1,5 @@
+interesting collection on html + css
+https://code-boxx.com/css-responsive-table/#sec-table
+
+fonts
+https://leerob.io/blog/fonts
