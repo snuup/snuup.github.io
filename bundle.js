@@ -436,4 +436,4 @@ let MainPage = () => {
 
 //render(() => <Overview />, "overview.html", "overview")
 //render(() => <Gallery />, "gallery.html", "gallery")
-render(() => preact.h(MainPage, null), "main.html", "main");
+render(() => preact.h(MainPage, null), "index.html", "main");
