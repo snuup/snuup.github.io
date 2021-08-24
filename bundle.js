@@ -184,7 +184,7 @@ let Link = ({ children }) => {
     let text = href.replace(/^https?:\/\/(www\.)?/, '');
     return (preact.h("a", { href: href, target: "_self" }, text));
 };
-let FullImg = (attrs) => (preact.h("div", { class: "imgcontainer" },
+let FullImg = (attrs) => (preact.h("div", { class: "imgcontainer", onClick: "toggleexplain()" },
     preact.h("img", { ...attrs, src: "/img/blank.gif", "data-src": attrs.src, alt: attrs.alt || '' })));
 let Nav = ({ projname, total, current }) => {
     total ??= 0;
@@ -219,7 +219,7 @@ let KeyMapDescription = ({ children, op, keys }) => (preact.h("tr", null,
     preact.h("td", null, keys.split(' ').map((key) => (preact.h("kbd", null, key))))));
 // class="showexplain"
 let Gallery = () => (preact.h(preact.Fragment, null,
-    preact.h("article", { id: "gallery", onClick: "toggleexplain()" },
+    preact.h("article", { id: "gallery" },
         preact.h(Buttons, null),
         preact.h("section", { class: "tv", id: Project.TV },
             preact.h(Nav, { projname: "tv production" }),

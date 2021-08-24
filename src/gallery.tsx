@@ -22,7 +22,7 @@ let Link = ({ children }) => {
 }
 
 let FullImg = (attrs) => (
-    <div class="imgcontainer">
+    <div class="imgcontainer" onClick="toggleexplain()">
         <img {...attrs} src="/img/blank.gif" data-src={attrs.src} alt={attrs.alt || ''} />
     </div>
 )
@@ -87,7 +87,7 @@ let KeyMapDescription = ({ children, op, keys }) => (
 // class="showexplain"
 export let Gallery = () => (
     <Fragment>
-        <article id="gallery" onClick="toggleexplain()">
+        <article id="gallery">
             <Buttons />
             <section class="tv" id={Project.TV}>
                 <Nav projname="tv production" />
