@@ -388,10 +388,10 @@ body[slide='11'] #gallery {
     background: #3d383a;
 }
 body[slide='12'] #gallery {
-  background: #3d383a;
+    background: #3d383a;
 }
 body[slide='13'] #gallery {
-  background: #3d383a;
+    background: #3d383a;
 }
 body[slide='14'] #gallery {
     background: #2b2d35;
@@ -576,6 +576,9 @@ table {
         font-size: large;
         flex: 2 1 auto;
         text-align: center;
+        padding: 0 20vw;
+        width: 100%;
+        box-sizing: border-box;
 
         // each item is another flex container for vertical centering
         display: flex;

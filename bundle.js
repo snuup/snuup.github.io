@@ -185,7 +185,7 @@ let Link = ({ children }) => {
     return (preact.h("a", { href: href, target: "_self" }, text));
 };
 let FullImg = (attrs) => (preact.h("div", { class: "imgcontainer" },
-    preact.h("img", { ...attrs, src: "blank.gif", "data-src": attrs.src, alt: attrs.alt || '' })));
+    preact.h("img", { ...attrs, src: "/img/blank.gif", "data-src": attrs.src, alt: attrs.alt || '' })));
 let Nav = ({ projname, total, current }) => {
     total ??= 0;
     current ??= 0;
@@ -330,7 +330,7 @@ let Gallery = () => (preact.h(preact.Fragment, null,
             preact.h(Explain, null,
                 preact.h("p", null, "a universal recommendation service, started with events in london + vienna"),
                 preact.h("p", null, "programmed in c# and c++ with in memory processing for results within 1 millisecond."),
-                preact.h("p", null, "here the skin for london, based on \"gangster no 1\", the hot movie in the brit scene then."))),
+                preact.h("p", null, "here the skin for london ..."))),
         preact.h("section", { class: "sputnik1", id: Project.Sputnik4 },
             preact.h(Nav, { projname: "sputnik4", total: 7, current: 2 }),
             preact.h(FullImg, { src: "https://res.cloudinary.com/snuu/image/upload/q_60/v1629154099/sputnik-large-2", alt: "sputnik4 screenshot 2 large" }),

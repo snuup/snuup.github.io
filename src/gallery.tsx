@@ -23,7 +23,7 @@ let Link = ({ children }) => {
 
 let FullImg = (attrs) => (
     <div class="imgcontainer">
-        <img {...attrs} src="blank.gif" data-src={attrs.src} alt={attrs.alt || ''} />
+        <img {...attrs} src="/img/blank.gif" data-src={attrs.src} alt={attrs.alt || ''} />
     </div>
 )
 
@@ -249,7 +249,7 @@ export let Gallery = () => (
                 <Explain>
                     <p>a universal recommendation service, started with events in london + vienna</p>
                     <p>programmed in c# and c++ with in memory processing for results within 1 millisecond.</p>
-                    <p>here the skin for london, based on "gangster no 1", the hot movie in the brit scene then.</p>
+                    <p>here the skin for london ...</p>
                 </Explain>
             </section>
             <section class="sputnik1" id={Project.Sputnik4}>
