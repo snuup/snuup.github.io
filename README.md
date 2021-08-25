@@ -1,6 +1,7 @@
-1. this repository hosts my developer portfolio: https://snuup.github.io<br/>
-2. it also holds a **10-line long static site generator** that embraces typescript and jsx.<br/>
+this repository 
 
+1. hosts my developer portfolio: https://snuup.github.io
+2. holds a **10-line long static site generator** that embraces typescript and jsx.
 
 github pages are configured to host the `/docs` folder.
 instead of separate branches for github pages and sources, everything is in main, even the "binaries" like bundle.js so that curious visitors do not need to clone + npm install 92MB of node_modules (deeeeeenooo!!!) + run to see build results.
@@ -9,6 +10,7 @@ instead of separate branches for github pages and sources, everything is in main
 # 1. portfolio page
 
 i repeatedly write web sites that are
+
 - quasi static = no db, updated now and then
 - basic html elements for text and images
 - photo gallery to show photos in good size
@@ -22,20 +24,19 @@ i used this project to study
 - column layout
 - layout with a raster determined by a monospace font
 - image hosting services
-- 
 
 ### vanilla photo gallery
 
 #### css scroll-snap
-first i tried with a recent addition to css: ![scroll-snap](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap) allows a pure css implementation of galleries, carousels and alike. one of the coolest advents in css.
+first i tried with a recent addition to css: [scroll-snap](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap) allows a pure css implementation of galleries, carousels and alike. one of the coolest advents in css.
 Even basic keyboard navigation works with arrow keys. The animation between scrolls can be controlled with scroll-behavior:
 we can have an animation determined by the browser (smooth) or no (auto) animation.
 
-+ pure css
-+ basic keyboard navigation
-+ animation possible with "smooth"
-- animation cannot be fine tuned, speed, curve
-- often will add more keyboard shortcuts which requires js anyway
+\+ pure css<br/>
+\+ basic keyboard navigation<br/>
+\+ animation possible with behavior:smooth<br/>
+\- animation cannot be fine tuned, speed, curve<br/>
+\- often will add more keyboard shortcuts which requires js anyway<br/>
 
 #### handcrafted scrolling container
 the alternative is to create an absolut positioned overflowing gallery-container and control its movement with
@@ -46,10 +47,10 @@ the faster animation that i configured - in contrast to the slow smooth on chrom
 but i later ran into a serious issue: after adding the sticky orientation elements on top of the gallery, those element flickered during
 scroll animation. i assume the sticky elements are controlled by the layout engine and pure bit blitting is lost. it happened at least in all chrome versions, maybe also in other browsers.
 
-+ full control over animations
-- swipe gesture must be implemented
-- no scrollbar
-- animation might interfere with sticky elements
+\+ full control over animations<br/>
+\- swipe gesture must be implemented<br/>
+\- no scrollbar<br/>
+\- animation might interfere with sticky elements<br/>
 
 
 ### sticky navigation / orientation
@@ -61,7 +62,7 @@ used sticky orientation elements in the gallery and also on small devices.
 
 experimented a lot with column layout. it is limited at the moment. it is not possible to vertically align the text such that it fills the end and creates room at the start. also any break-inside and similar properties are ignored in all browsers. aligning images with text lines is hard, since the column width is dynamic, this is a circumstance of flexible layouts however. if we lower our expections - flexible web layout wont have print layout quality soon - column layout is verynice though and easy to handle in responsive scenarios.
 
-![mdn](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout)
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout
 
 
 ### image service
