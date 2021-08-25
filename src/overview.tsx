@@ -95,7 +95,7 @@ export let Overview = () => (
             </h2>
             <cite>
                 <p>warum großschreiben wenn man nicht groß sprechen kann?</p>
-                <p>why should one write uppercase if one cannot speak uppercase?</p>
+                <p>why write uppercase if one cannot speak uppercase?</p>
                 <p><br/>(bauhaus)</p>
             </cite>
         </header>
