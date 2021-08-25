@@ -71,6 +71,10 @@ i compared image transformation services: cloudinary, imgix and uploadcare. ther
 they are all of good, differing in transformation features, api possibilities and widgets to be included by websites (which i did not need here).
 for now sticked with cloudinary. thx for the free tier and support.
 
+### lighthouse score
+
+![lighthouse score](lighthouse.JPG)
+
 
 # 2. static site generator
 
