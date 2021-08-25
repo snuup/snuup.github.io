@@ -14,6 +14,7 @@ let gallery = document.getElementById('gallery')
 let overview = document.getElementById('overview')
 
 // core
+let loadgalleryimages = (i) => [i - 1, i, i + 1].forEach(loadimg) // index bounds are checked in loadimg
 
 function setslide(i, withscroll = true) {
     i = Math.min(i, slidecount - 1)
@@ -26,11 +27,6 @@ function setslide(i, withscroll = true) {
     }
 }
 
-$('rewind').addEventListener('click', (e) => {
-    setslide(0)
-    e.cancelBubble = true
-})
-
 $('leftfield').onclick = () => setslide(current - 1)
 $('rightfield').onclick = () => setslide(current + 1)
 $('btnclose').onclick = close
@@ -42,9 +38,34 @@ function showexplain() {
 let hideexplain = () => document.body.classList.remove('showexplain')
 let toggleexplain = () => document.body.classList.toggle('showexplain')
 
-// controls
 let isgalleryopen = () => document.body.classList.contains('showgallery')
 
+function loadimg(i) {
+  let img = images[i]
+  if (img && img.dataset.src) {
+      img.src = img.dataset.src
+      delete img.dataset.src
+  }
+}
+
+// e is the link element inside a section in the overview
+function opengallery(e) {
+  let project = closest(e, (e) => e.tagName == 'SECTION').id
+  let i = d[project]
+  setslide(i)
+  document.body.classList.add('showgallery')
+  showexplain()
+  //gallery.webkitRequestFullscreen({ navigationUI: 'hide' }) // navigationUI: 'hide' has no effect on ipad safari (well known issue)
+}
+
+function close(e) {
+  let p = slides[current].id // current project
+  document.body.classList.remove('showgallery')
+  if (p) overview.querySelector('#' + p).scrollIntoView({ block: 'center' })
+  e.cancelBubble = true
+}
+
+// event listeners
 window.addEventListener('keydown', (e) => {
     if (!isgalleryopen()) return
     switch (e.code) {
@@ -84,32 +105,10 @@ document.addEventListener('wheel', (e) => {
     if (e.deltaY < 0) setslide(current - 1)
 })
 
-function loadimg(i) {
-    let img = images[i]
-    if (img && img.dataset.src) {
-        img.src = img.dataset.src
-        delete img.dataset.src
-    }
-}
-
-let loadgalleryimages = (i) => [i - 1, i, i + 1].forEach(loadimg) // index bounds are checked in loadimg
-
-// e is the link element inside a section in the overview
-function opengallery(e) {
-    let project = closest(e, (e) => e.tagName == 'SECTION').id
-    let i = d[project]
-    setslide(i)
-    document.body.classList.add('showgallery')
-    showexplain()
-    //gallery.webkitRequestFullscreen({ navigationUI: 'hide' }) // navigationUI: 'hide' has no effect on ipad safari (well known issue)
-}
-
-function close(e) {
-    let p = slides[current].id // current project
-    document.body.classList.remove('showgallery')
-    if (p) overview.querySelector('#' + p).scrollIntoView({ block: 'center' })
-    e.cancelBubble = true
-}
+$('rewind').addEventListener('click', (e) => {
+  setslide(0)
+  e.cancelBubble = true
+})
 
 gallery.addEventListener('scroll', () => {
     let i = Math.ceil((gallery.scrollLeft - gallery.offsetWidth / 2) / gallery.offsetWidth) // switch in the middle between slides
@@ -124,3 +123,5 @@ function $(id) {
 function closest(e, pred) {
     return e && ((pred(e) && e) || closest(e.parentElement, pred))
 }
+
+console.log(42);
