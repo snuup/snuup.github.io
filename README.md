@@ -1,4 +1,4 @@
-this repository 
+this repository
 
 1. hosts my developer portfolio: https://snuup.github.io
 2. holds a **10-line long static site generator** that embraces typescript and jsx.
@@ -17,7 +17,7 @@ i repeatedly write web sites that are
 
 there are excellent libraries for galleries, i belive the best one is photoswipe but there are many other good ones. i wondered however, how far it goes with plain css and minimal js so i can handle these projects without dependencies that often just do not yet use latest browser features.
 
-i used this project to study 
+i used this project to study
 
 - the limits of a vanilla implementation (pure css as holy grail) for a gallery
 - webfonts in more detail
@@ -73,7 +73,7 @@ for now sticked with cloudinary. thx for the free tier and support.
 
 ### lighthouse score
 
-![lighthouse score](lighthouse.JPG)
+![lighthouse score](lighthouse.jpg)
 
 
 # 2. static site generator
