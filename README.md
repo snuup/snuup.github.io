@@ -53,7 +53,7 @@ the core work is done by rendertostring, which comes from preact. preac also def
 
 the render function also utilises a template. this is necessary because the elements inside an html header cannot be expressed with jsx.
 
-*** client side ressources
+### client side ressources
 js and css files needed by the browser are maintained inside the served docs folder.
 
 
