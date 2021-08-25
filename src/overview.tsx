@@ -72,8 +72,14 @@ let GalleryLink = ({ img, classname, alt }: { img: string; classname?: string; a
 let Section = ({ children, project, header }: { children; project: Project; header: string }) => (
     <section id={project}>
         <div class="bg" />
-        <h3><div>{header}</div><div></div></h3>
-        <div class="content"><h3>{header}</h3>{children}</div>
+        <h3>
+            <div>{header}</div>
+            <div></div>
+        </h3>
+        <div class="content">
+            <h3>{header}</h3>
+            {children}
+        </div>
     </section>
 )
 
@@ -87,6 +93,11 @@ export let Overview = () => (
                 <p>human computer interaction</p>
                 <p>craft</p>
             </h2>
+            <cite>
+                <p>warum großschreiben wenn man nicht groß sprechen kann?</p>
+                <p>why should one write uppercase if one cannot speak uppercase?</p>
+                <p><br/>(bauhaus 1925)</p>
+            </cite>
         </header>
 
         <Section project={Project.TV} header="tv production">
@@ -98,17 +109,18 @@ export let Overview = () => (
             <p>
                 on every project start i recall what professor david cheriton{' '}
                 <InlineLink href="http://web.stanford.edu/class/cs249a/">taught</InlineLink> us about software projects: 50% never complete,
-                30% are never used, 20% succeed. here i identified the risk to fall into the 30 pie, because we face the
-                high benchmark of the current workflow and also need to cope with the transition effort.
+                30% are never used, 20% succeed. here i identified the risk to fall into the 30 pie, because we face the high benchmark of
+                the current workflow and also need to cope with the transition effort.
             </p>
             <p>
-                i considered the organisatorial aspects of human computer interaction (hci) critical.
-                participatory design, attention on critical roles in the production workflow and perfect collaboration between all involved
-                lead to success - we landed safely in the center of the 20 pie.
+                i considered the organisatorial aspects of human computer interaction (hci) critical. participatory design, attention on
+                critical roles in the production workflow and perfect collaboration between all involved lead to success - we landed safely
+                in the center of the 20 pie.
             </p>
             <p>
                 the tool immediately became the indispensable information system for the (partly remote) team. production planning and tv
-                programming by drag-and-drop is now available on phones, pads and web. 48578 production items have been entered while these letters were written.
+                programming by drag-and-drop is now available on phones, pads and web. 48578 production items have been entered while these
+                letters were written.
             </p>
             <GalleryLink img="https://res.cloudinary.com/snuu/image/upload/f_auto/v1629150958/tv-small" alt="tv application small" />
         </Section>
@@ -121,14 +133,14 @@ export let Overview = () => (
             <p>ffoqsi communicates its research on food quality and safety with a static web page that is updated every few weeks.</p>
             <p>
                 i suggested a static site generator setup where they update markdown files in visual studio code. inside markdown, html tag
-                components make it easy to include content blocks like team members or photo collections. no available static site
-                generator fullfilled the needs, so i wrote 'foxygen' in asp.net and razor.
+                components make it easy to include content blocks like team members or photo collections. no available static site generator
+                fullfilled the needs, so i wrote 'foxygen' in asp.net and razor.
             </p>
             <p>
                 i was prepared to convert the page into a usual cms based solution if this way of site maintenance would be to raw for them
                 - at my risk. but the opposite happened. all ffoqsi people involved in site updates gave very positive feedback and said
-                that this way is much better than other tools they used before. convenience features like 1-click publishing to github
-                via a browser bookmark have added to that. static site gens proved applicable beyond the developer community.
+                that this way is much better than other tools they used before. convenience features like 1-click publishing to github via a
+                browser bookmark have added to that. static site gens proved applicable beyond the developer community.
             </p>
             <GalleryLink
                 img="https://res.cloudinary.com/snuu/image/upload/c_lfill,g_north,h_220,w_330,f_auto/v1628151278/ffoqsi-small"
