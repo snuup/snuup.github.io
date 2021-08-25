@@ -262,7 +262,7 @@ export let Gallery = () => (
                     <p>... and here the skin for vienna</p>
                     <p>
                         i always found skeuomorphism in screen design too dominant, underestimating users. the 5 buttons in the header are
-                        the only slight skeumorph elements, justified as a contrast to the remainung ui, which was flat. this was in 2003,
+                        the only slight skeuomorph elements, justified as a contrast to the remainung ui, which was flat. this was in 2003,
                         many years later flat <span class="strike"> was </span> is en vogue. same with the large fotos that set the mood
                         here.
                     </p>
