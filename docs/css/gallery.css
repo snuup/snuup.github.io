@@ -407,7 +407,7 @@ body[slide='20'] #gallery {
 }
 
 body[slide='21'] #gallery {
-  transition: background 2500ms;
+  transition: background 5000ms;
   background: #333;
 }
 

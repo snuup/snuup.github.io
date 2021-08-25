@@ -360,7 +360,7 @@ export let Gallery = () => (
                     alt="rhodes chroma 1 large"
                 />
                 <Explain>
-                    <p>the rhodes chroma synthesizer is a piece of cult.</p>
+                    <p>the rhodes chroma synthesizer - cult.</p>
                 </Explain>
             </section>
             <section class="chroma1" id={Project.Chroma}>
