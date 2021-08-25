@@ -123,5 +123,3 @@ function $(id) {
 function closest(e, pred) {
     return e && ((pred(e) && e) || closest(e.parentElement, pred))
 }
-
-console.log(42);
