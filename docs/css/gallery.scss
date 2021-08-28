@@ -86,7 +86,7 @@ body.showgallery {
     height: 100%;
     z-index: 10;
 
-    transition: opacity 350ms ease-out;
+    transition: opacity 350ms ease-out, background 1500ms;
 
     // images
     display: grid;
@@ -100,7 +100,6 @@ body.showgallery {
 
     // visuals
     background: rgb(62, 68, 75);
-    transition: background 1500ms;
 
     section {
         position: relative; // container for explanation
@@ -381,7 +380,7 @@ body.showgallery {
 }
 
 body[slidename='viennageo'] #gallery {
-  background: rgb(77, 58, 58);
+    background: rgb(77, 58, 58);
 }
 body[slidename='tv'] #gallery {
     background: #423a42;
