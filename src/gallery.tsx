@@ -181,7 +181,6 @@ export let Gallery = () => (
           </p>
         </Explain>
       </section>
-
       <section class="viennageo" id={Project.ViennaGeo}>
         <Nav projname="vienna-geo" />
         <FullImg
@@ -198,9 +197,9 @@ export let Gallery = () => (
           lighthouse suggests a year. well, for now that 99 score does not force me to put the images onto another host.
           tough netlify might be a good alternative to github pages.
           </p>
+          <p><a href="http://viennageo.github.io">website</a> (best on mobile phone)</p>
         </Explain>
       </section>
-
       <section class="toolwindow" id={Project.FileStructureWindow}>
         <Nav projname="f# toolwindow" />
         <FullImg
@@ -410,21 +409,19 @@ export let Gallery = () => (
           <p>lets end with another picture of this wonderful synth.</p>
         </Explain>
       </section>
-      <section>
-        <div class="fin">
-          <div class="end-text">
-            <div>this is the end. but since this was in reverse chronological order, it actually is the&nbsp;<span id="rewind">beginning</span>.</div>
-          </div>
-          <div class="controls">
-            <table>
-              <KeyMapDescription op="previous slide" keys="left-arrow">swipe, mousewheel, scrollbar</KeyMapDescription>
-              <KeyMapDescription op="next slide" keys="right-arrow enter">swipe, mousewheel, scrollbar</KeyMapDescription>
-              <KeyMapDescription op="first slide" keys="pos1">scrollbar</KeyMapDescription>
-              <KeyMapDescription op="last slide" keys="end">scrollbar</KeyMapDescription>
-              <KeyMapDescription op="close gallery" keys="esc">close-button (top right corner)</KeyMapDescription>
-              <KeyMapDescription op="toggle explanation" keys="space">click or touch page</KeyMapDescription>
-            </table>
-          </div>
+      <section class="fin">
+        <div class="end-text">
+          <div>this is the end. but since this was in reverse chronological order, it actually is the&nbsp;<span id="rewind">beginning</span>.</div>
+        </div>
+        <div class="controls">
+          <table>
+            <KeyMapDescription op="previous slide" keys="left-arrow">swipe, mousewheel, scrollbar</KeyMapDescription>
+            <KeyMapDescription op="next slide" keys="right-arrow enter">swipe, mousewheel, scrollbar</KeyMapDescription>
+            <KeyMapDescription op="first slide" keys="pos1">scrollbar</KeyMapDescription>
+            <KeyMapDescription op="last slide" keys="end">scrollbar</KeyMapDescription>
+            <KeyMapDescription op="close gallery" keys="esc">close-button (top right corner)</KeyMapDescription>
+            <KeyMapDescription op="toggle explanation" keys="space">click or touch page</KeyMapDescription>
+          </table>
         </div>
       </section>
     </article>

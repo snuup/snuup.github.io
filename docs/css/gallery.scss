@@ -36,22 +36,19 @@
             margin-bottom: 0;
         }
     }
-
 }
 
 body.showexplain {
     .explainbox {
         opacity: 1;
     }
-    .imgcontainer,
-    .explain {
-        cursor: url('http://localhost:4000/img/messageminus.png'), auto;
+    #gallery {
+        cursor: url('https://snuup.github.io/img/messageminus.png') 18 18, auto;
     }
 }
 
-.imgcontainer,
-.explain {
-    cursor: url('http://localhost:4000/img/messageplus.png'), auto;
+#gallery {
+    cursor: url('https://snuup.github.io/img/messageplus.png') 18 18, auto;
 }
 
 body:not(.showexplain) {
@@ -595,7 +592,7 @@ table {
     }
 }
 
-.fin {
+section.fin {
     height: 100%;
     color: white;
 
