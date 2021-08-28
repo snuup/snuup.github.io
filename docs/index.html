@@ -67,7 +67,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/c_scale,f_auto,q_80/v1629150961/tv-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <h4>design forces</h4>
             <p>
@@ -114,7 +114,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/c_crop,g_center,h_900,q_70,w_1300,x_20,f_auto/v1628288125/ffoqsi-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>
               research center ffoqsi had graphic elements, visual corporate
@@ -146,7 +146,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/f_auto,q_30/v1629151770/ffoqsi-ssg-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <h4>site generator</h4>
             <p>
@@ -180,7 +180,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/f_auto/v1629294479/discretelogics-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>
               discretelogics provides tools for time series analysis and
@@ -235,6 +235,33 @@
           </div>
         </div>
       </section>
+      <section class="viennageo" id="viennageo">
+        <nav style="width: 100vw">
+          <div class="sticky"><span class="pro">vienna-geo</span></div>
+        </nav>
+        <div class="imgcontainer" onClick="toggleexplain()">
+          <img
+            src="/img/blank.gif"
+            alt="vienna-geo website screenshot large"
+            width="1600"
+            height="900"
+            data-src="https://res.cloudinary.com/snuu/image/upload/f_auto/v1628151278/viennageo"
+          />
+        </div>
+        <div class="explainbox" onClick="toggleexplain()">
+          <div class="explain">
+            <p>simple static web page.</p>
+            <p>
+              the page has a lighthouse score of 100/100/100/100 for desktop and
+              99/100/100/100 for mobile. the 1 percent off is for the short
+              (10min) cache intervals on images. lighthouse suggests a year.
+              well, for now that 99 score does not force me to put the images
+              onto another host. tough netlify might be a good alternative to
+              github pages.
+            </p>
+          </div>
+        </div>
+      </section>
       <section class="toolwindow" id="toolwindow">
         <nav style="width: 100vw">
           <div class="sticky"><span class="pro">f# toolwindow</span></div>
@@ -246,7 +273,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/v1629155891/toolwindow-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <h4>visual studio toolwindow</h4>
             <ul>
@@ -279,7 +306,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/f_auto/v1629293057/docs-pages-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <h5>use case</h5>
             <p>
@@ -318,7 +345,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/f_auto,q_53/v1629153619/tacido-notes-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>client side encrypting note taking app. built with</p>
             <ul>
@@ -335,7 +362,7 @@
           </div>
         </div>
       </section>
-      <section class="sputnik1" id="sputnik4">
+      <section class="sputnik-1" id="sputnik4">
         <nav style="width: 700vw">
           <div class="sticky">
             <span class="pro">sputnik4</span><span class="num">1</span
@@ -351,7 +378,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/f_auto/v1629153792/sputnik-large-1"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>
               a universal recommendation service, started with events in london
@@ -365,7 +392,7 @@
           </div>
         </div>
       </section>
-      <section class="sputnik1" id="sputnik4">
+      <section class="sputnik-2" id="sputnik4">
         <nav style="width: 600vw">
           <div class="sticky">
             <span class="pro hide">sputnik4</span><span class="num hide">1</span
@@ -383,7 +410,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/q_60/v1629154099/sputnik-large-2"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>... and here the skin for vienna</p>
             <p>
@@ -397,7 +424,7 @@
           </div>
         </div>
       </section>
-      <section class="sputnik3" id="sputnik4">
+      <section class="sputnik-3" id="sputnik4">
         <nav style="width: 500vw">
           <div class="sticky">
             <span class="pro hide">sputnik4</span><span class="num hide">1</span
@@ -415,7 +442,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/q_50/v1629154098/sputnik-large-3"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>
               users read recommended events based on their own ratings and the
@@ -424,7 +451,7 @@
           </div>
         </div>
       </section>
-      <section class="sputnik3" id="sputnik4">
+      <section class="sputnik-4" id="sputnik4">
         <nav style="width: 400vw">
           <div class="sticky">
             <span class="pro hide">sputnik4</span><span class="num hide">1</span
@@ -441,11 +468,11 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/q_75/v1629185988/sputnik-large-4"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain"><p>the weekly overview</p></div>
         </div>
       </section>
-      <section class="sputnik3" id="sputnik4">
+      <section class="sputnik-5" id="sputnik4">
         <nav style="width: 300vw">
           <div class="sticky">
             <span class="pro hide">sputnik4</span><span class="num hide">1</span
@@ -462,13 +489,13 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/q_51/v1629188267/sputnik-large-5"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>channel selection - similar to newsgroups</p>
           </div>
         </div>
       </section>
-      <section class="sputnik3" id="sputnik4">
+      <section class="sputnik-6" id="sputnik4">
         <nav style="width: 200vw">
           <div class="sticky">
             <span class="pro hide">sputnik4</span><span class="num hide">1</span
@@ -484,13 +511,13 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/q_49/v1629185987/sputnik-large-6"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>users find likeminded users with similar ratings ...</p>
           </div>
         </div>
       </section>
-      <section class="sputnik7" id="sputnik4">
+      <section class="sputnik-7" id="sputnik4">
         <nav style="width: 100vw">
           <div class="sticky">
             <span class="pro hide">sputnik4</span><span class="num hide">1</span
@@ -506,7 +533,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/f_auto/v1629294013/sputnik-large-7"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>and use the service on their mobile phones.</p>
           </div>
@@ -526,7 +553,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/c_crop,g_north,h_830,w_1132,x_0,y_0/v1628203320/realtime-analytics-1-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>
               implemented the <b>realtime quoteboard</b> (model and view), the
@@ -550,7 +577,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/v1628203320/realtime-analytics-2-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>
               <b>marketprofile</b>, with hover and selection features on every
@@ -574,7 +601,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/c_crop,g_north,h_837/v1628203319/realtime-analytics-application-small-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain"><p>fold / collapse per day.</p></div>
         </div>
       </section>
@@ -593,13 +620,13 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/c_scale,f_auto,q_10,w_1600/v1628111321/chroma1-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>the rhodes chroma synthesizer - cult.</p>
           </div>
         </div>
       </section>
-      <section class="chroma1" id="chroma">
+      <section class="chroma2" id="chroma">
         <nav style="width: 300vw">
           <div class="sticky">
             <span class="pro hide">midi interface</span
@@ -615,7 +642,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/q_30/v1628203320/chroma2-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>i lived inside it while builing a midi interface for it.</p>
           </div>
@@ -636,7 +663,7 @@
             data-src="https://res.cloudinary.com/snuu/image/upload/q_30/v1628203320/chroma3-large"
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <ul>
               <li>soldered parallel hardware interface for commodore vic 20</li>
@@ -666,7 +693,7 @@
             alt
           />
         </div>
-        <div class="explainbox">
+        <div class="explainbox" onClick="toggleexplain()">
           <div class="explain">
             <p>lets end with another picture of this wonderful synth.</p>
           </div>
@@ -677,7 +704,7 @@
           <div class="end-text">
             <div>
               this is the end. but since this was in reverse chronological
-              order, it actually is the <span id="rewind">begin</span>.
+              order, it actually is the <span id="rewind">beginning</span>.
             </div>
           </div>
           <div class="controls">
@@ -954,6 +981,73 @@
               onClick="opengallery(this)"
               class="img-3-2"
               alt="teahouse screenshot small"
+            /><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="fa-external"
+            >
+              <path
+                d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section id="viennageo">
+        <div class="bg"></div>
+        <h3>
+          <div>vienna geo</div>
+          <div></div>
+        </h3>
+        <div class="content">
+          <h3>vienna geo</h3>
+          <p class="tags">
+            <span>#responsive </span><span>#web </span><span>#page </span>
+          </p>
+          <p>
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="fa-external"
+              >
+                <path
+                  d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                ></path>
+              </svg>
+              <a href="https://viennageo.github.io" target="_self"
+                >website</a
+              ></span
+            ><br /><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 512"
+              class="fa-github"
+            >
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path>
+            </svg>
+            <a
+              href="https://github.com/viennageo/viennageo.github.io"
+              target="_self"
+              >repository</a
+            >
+          </p>
+          <p>
+            i founded und run a local meetup where we get all people involved in
+            geo-information systems together to share experiences.
+          </p>
+          <p>
+            the meetup's web page is pure static and hosted at github. i author
+            it with a self written static site generator, that consists of 10
+            lines javascript and allows html componentisation via jsx.
+          </p>
+          <div class="gallerylink">
+            <img
+              src="https://res.cloudinary.com/snuu/image/upload/h_220,w_330,f_auto/v1628151278/viennageo"
+              onClick="opengallery(this)"
+              class="img-3-2"
+              alt="viennageo web page"
             /><svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
