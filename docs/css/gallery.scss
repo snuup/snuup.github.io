@@ -42,12 +42,12 @@ body.showexplain {
     .explainbox {
         opacity: 1;
     }
-    #gallery {
+    #gallery section:not(.fin) {
         cursor: url('https://snuup.github.io/img/messageminus.png') 18 18, auto;
     }
 }
 
-#gallery {
+#gallery section:not(.fin) {
     cursor: url('https://snuup.github.io/img/messageplus.png') 18 18, auto;
 }
 
@@ -340,7 +340,8 @@ body.showgallery {
             }
         }
 
-        &.chroma1 {
+        &.chroma1,
+        &.chroma2 {
             img {
                 max-width: 1600px;
                 max-height: 1177px;
