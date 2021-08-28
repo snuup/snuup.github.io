@@ -45,6 +45,15 @@ body.showexplain {
     .explainbox {
         opacity: 1;
     }
+    .imgcontainer,
+    .explain {
+        cursor: url('http://localhost:4000/img/messageminus.png'), auto;
+    }
+}
+
+.imgcontainer,
+.explain {
+    cursor: url('http://localhost:4000/img/messageplus.png'), auto;
 }
 
 body:not(.showexplain) {
@@ -138,8 +147,6 @@ body.showgallery {
             flex-direction: column;
             align-items: center;
 
-            cursor: pointer;
-
             transition: filter 450ms;
 
             //   &:hover {
@@ -151,11 +158,6 @@ body.showgallery {
             width: 100%;
             height: 100%;
             object-fit: contain;
-        }
-
-        img,
-        .explain {
-            cursor: pointer;
         }
 
         &.viennageo {
@@ -532,7 +534,8 @@ body[slidename='fin'] #gallery {
 #leftfield,
 #rightfield {
     position: fixed;
-    width: 20vw;
+    width: 5vw;
+    min-width: 60px;
     top: 25%;
     bottom: 25%;
     z-index: 11; // gallery is 10
