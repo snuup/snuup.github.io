@@ -5,13 +5,15 @@
 
 .explainbox {
     position: absolute;
-    right: 22vw; // rightfield is 20vw
+    right: calc(max(60px, 5vw)); // rightfield is min 60px and 5vw
+    margin-right: 10px; // add space to rightfield
+    margin-left: 30px;
     bottom: 3em;
     max-width: 960px;
     background: #fff;
 
-    margin: 2em 3em;
-    padding: 10px;
+    padding: 10px; // this is the border outside the dashed line, the reason for explainbox to exist
+
     h4,
     h5 {
         font-size: 100%;
