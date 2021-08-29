@@ -44,13 +44,19 @@ body.showexplain {
     .explainbox {
         opacity: 1;
     }
-    #gallery section:not(.fin) .imgcontainer {
-        cursor: url('https://snuup.github.io/img/messageminus.png') 18 18, auto;
+    #gallery section:not(.fin) {
+        .imgcontainer,
+        .explainbox {
+            cursor: url('https://snuup.github.io/img/messageminus.png') 18 18, auto;
+        }
     }
 }
 
-#gallery section:not(.fin) .imgcontainer {
-    cursor: url('https://snuup.github.io/img/messageplus.png') 18 18, auto;
+#gallery section:not(.fin) {
+    .imgcontainer,
+    .explainbox {
+        cursor: url('https://snuup.github.io/img/messageplus.png') 18 18, auto;
+    }
 }
 
 body:not(.showexplain) {
