@@ -4,5 +4,8 @@
             "titleBar.activeBackground": "#5f465dcc",
             "titleBar.activeForeground": "#ffffff"
         }
+    },
+    "easycompile.sass": {
+      "sourceMap": false
     }
 }
