@@ -122,7 +122,7 @@ export let Overview = () => (
         programming by drag-and-drop is now available on phones, pads and web. 48578 production items have been entered while these
         letters were written.
             </p>
-      <GalleryLink img="https://res.cloudinary.com/snuu/image/upload/f_auto/v1629150958/tv-small" alt="tv application small" />
+      <GalleryLink img="https://res.cloudinary.com/snuu/image/upload/f_auto,h_230,w_345/v1629150958/tv-large-2" alt="tv application small" />
     </Section>
 
     <Section project={Project.FFoqsi} header="ffoqsi">

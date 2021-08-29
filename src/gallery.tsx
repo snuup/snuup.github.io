@@ -92,7 +92,7 @@ export let Gallery = () => (
       <section class="tv" id={Project.TV}>
         <Nav projname="tv production" />
         <FullImg
-          src="https://res.cloudinary.com/snuu/image/upload/c_scale,f_auto,q_80/v1629150961/tv-large"
+          src="https://res.cloudinary.com/snuu/image/upload/c_scale,f_auto,q_80/v1629150961/tv-large-2"
           alt="tv application screenshot large"
         />
         <Explain>
