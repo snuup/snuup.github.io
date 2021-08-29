@@ -404,7 +404,7 @@ export let Gallery = () => (
       </section>
       <section class="chroma4" id={Project.Chroma}>
         <Nav projname="midi interface" total={4} current={4} />
-        <FullImg src="https://res.cloudinary.com/snuu/image/upload/q_30/v1628203320/chroma10.jpg" />
+        <FullImg src="https://res.cloudinary.com/snuu/image/upload/q_30/v1628203320/chroma4-large" />
         <Explain>
           <p>lets end with another picture of this wonderful synth.</p>
         </Explain>

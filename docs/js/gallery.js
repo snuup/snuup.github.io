@@ -16,6 +16,10 @@ let overview = document.getElementById('overview')
 // core
 let loadgalleryimages = (i) => [i - 1, i, i + 1].forEach(loadimg) // index bounds are checked in loadimg
 
+for (let i = 0; i < slidecount; i++) { // preload all gallery images
+  loadimg(i)
+}
+
 function setslide(i, withscroll = true) {
   i = Math.min(i, slidecount - 1)
   i = Math.max(i, 0)
@@ -109,12 +113,18 @@ $('rewind').addEventListener('click', (e) => {
   e.cancelBubble = true
 })
 
-// only when the users scrolls with the scrollbar, the scroll event shall be active and call setslide
-// otherwise, key and click events would trigger setslide which causes scroll events which in turn calls setslide
 let scrolling = false
-
-gallery.addEventListener('mousedown', e => { scrolling = e.target == gallery })
-gallery.addEventListener('mouseup', e => { scrolling = false })// always ends scrolling, no need to check e.target
+let istouchdevice = matchMedia('(hover: none)').matches
+if (istouchdevice) {
+  // touch devices change the slide only via scrolling
+  scrolling = true
+}
+else {
+  // only when the users scrolls with the scrollbar, the scroll event shall be active and call setslide
+  // otherwise, key and click events would trigger setslide which causes scroll events which in turn calls setslide
+  gallery.addEventListener('mousedown', e => { scrolling = e.target == gallery })
+  gallery.addEventListener('mouseup', e => { scrolling = false })// always ends scrolling, no need to check e.target
+}
 gallery.addEventListener('scroll', (e) => {
   if (scrolling) {
     let i = Math.ceil((gallery.scrollLeft - gallery.offsetWidth / 2) / gallery.offsetWidth) // switch in the middle between slides
