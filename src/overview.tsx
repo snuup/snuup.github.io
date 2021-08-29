@@ -315,7 +315,7 @@ export let Overview = () => (
         falco's first world tour. until today.
             </p>
       <GalleryLink
-        img="https://res.cloudinary.com/snuu/image/upload/f_auto,q_90,w_300,h_200/v1628151278/chroma-synthesizer-opened"
+        img="https://res.cloudinary.com/snuu/image/upload/f_auto,q_90,w_300,h_200,e_sepia:80/v1628151278/chroma-synthesizer-opened"
         alt="rhodes chrome synthesizer opened"
       />
     </Section>
