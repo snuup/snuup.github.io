@@ -193,7 +193,7 @@ let Overview = () => (preact.h("article", { id: "overview" },
         preact.h("p", null, "the legendary rhodes chroma synthesizer has a computer interface but no midi, the standard that arrived after its production."),
         preact.h("p", null, "i was asked to create a midi interface. after organizing technical documents soldered a parallel interface and a midi hardware interface for the commodore vic 20 (mind the \u03C62 line of the 6502 cpu). wrote software in machine language using raw mnemonics."),
         preact.h("p", null, "adapted hard- and software for the rockwell 6511eab singlechip microcontroller. without an unaffordable emulator this was a blind flight but after erasing the eprom a hundred times with my parents sunray lamp it worked perfect. and it does since falco's first world tour. until today."),
-        preact.h(GalleryLink, { img: "https://res.cloudinary.com/snuu/image/upload/f_auto,q_90,w_300,h_200/v1628151278/chroma-synthesizer-opened", alt: "rhodes chrome synthesizer opened" }))));
+        preact.h(GalleryLink, { img: "https://res.cloudinary.com/snuu/image/upload/f_auto,q_90,w_300,h_200,e_sepia:80/v1628151278/chroma-synthesizer-opened", alt: "rhodes chrome synthesizer opened" }))));
 
 let Link = ({ children }) => {
     let href = children;
