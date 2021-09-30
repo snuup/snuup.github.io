@@ -36,7 +36,6 @@ export function render(h: () => JSX.Element, filename, title) {
   console.log('wrote', filename)
 }
 
-// n.trim = test for string type
 export function cc(...names): string {
   return names.flatMap((n) => (n.trim ? n : Object.keys(n).filter((k) => n[k]))).join(' ') // n.trim detects strings
 }
