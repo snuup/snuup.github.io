@@ -317,5 +317,6 @@ export let Overview = () => (
         alt="rhodes chrome synthesizer opened"
       />
     </Section>
+
   </article>
 )
