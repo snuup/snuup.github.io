@@ -107,8 +107,7 @@ export let Overview = () => (
         challenge, since the efficiency of the huge planning board on the wall was hard to beat.
             </p>
       <p>
-        on every project start i recall what professor david cheriton{' '}
-        <InlineLink href="http://web.stanford.edu/class/cs249a/">taught</InlineLink> us about software projects: 50% never complete,
+        on every project start i recall what i learnt at university about software projects: 50% never complete,
                 30% are never used, 20% succeed. here i identified the risk to fall into the 30 pie, because we face the high benchmark of
                 the current workflow and also need to cope with the transition effort.
             </p>
@@ -275,8 +274,7 @@ export let Overview = () => (
         com&shy;putes results in single mil&shy;li&shy;second range via in memory computation.
             </p>
       <p>
-        started as a student project in <InlineLink href="http://web.stanford.edu/class/cs249a/">cs249</InlineLink> as an open
-                collabo&shy;rative filtering system - "recommendations in social context".
+        started as a student project as an open collabo&shy;rative filtering system - "recommendations in social context".
             </p>
       <GalleryLink
         img="https://res.cloudinary.com/snuu/image/upload/f_auto,c_crop,g_north,h_300,w_450,y_54/v1628268626/sputnik4-phones-small"
